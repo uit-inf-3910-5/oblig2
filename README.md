@@ -53,26 +53,11 @@ the topic:
 
 ### Prerequisites
 
-* Install .NET Core 3.1
+* Install .NET 5.0
+
+### Building and running
 
 ```sh
-dotnet install -g paket
-dotnet install -g fake-cli
-paket install
-```
-
-### Using FAKE
-
-```sh
-fake build -t Debug
-cd deploy
-./Parser ex1.csv
-```
-
-### Using the dotnet CLI
-
-```sh
-paket install
 cd src
 dotnet build
 dotnet run ex1.csv
